@@ -9,7 +9,7 @@ To provide the most simple implementation for internationalization
 <li>curLang is used inside the code</li>
 </ul>
 
-<h2>Design</h2>
+<h2>Code</h2>
 
 ```ts
 const en : IColors = {
@@ -38,3 +38,9 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
 `
 
 ```
+
+
+<h2>Future</h2>
+<ul>
+<li>put the language objects in files as done in<a href='https://github.com/leerob/cern-next/tree/main/locales'>here</a></li>
+</ul>
