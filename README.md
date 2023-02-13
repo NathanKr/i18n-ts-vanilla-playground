@@ -12,18 +12,23 @@ To provide the most simple implementation for internationalization
 <h2>Code</h2>
 
 ```ts
+
+en.ts
 const en : IColors = {
   red: 'Red',
   green: "Green",
   blue: 'Blue'
 }
 
+fr.ts
 const fr : IColors = {
   red: 'Rouge',
   green: "Vert",
   blue: 'Bleu'
 }
 
+
+main.ts
 const curLang = fr;
 document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
   <div>
@@ -40,7 +45,3 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
 ```
 
 
-<h2>Future</h2>
-<ul>
-<li>put the language objects in files as done in<a href='https://github.com/leerob/cern-next/tree/main/locales'>here</a></li>
-</ul>

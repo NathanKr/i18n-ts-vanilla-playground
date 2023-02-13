@@ -1,20 +1,9 @@
 import "./style.css";
-import { setupCounter } from "./counter";
-import { ILang } from "./types";
+import fr from './locales/fr'
+import en from './locales/en'
 
-const en: ILang = {
-  red: "Red",
-  green: "Green",
-  blue: "Blue",
-};
 
-const fr: ILang = {
-  red: "Rouge",
-  green: "Vert",
-  blue: "Bleu",
-};
-
-const curLang = fr;
+const curLang = en;
 document.querySelector<HTMLDivElement>("#app")!.innerHTML = `
   <div>
     <p>current language : ${curLang == fr ? "French" : "English"}</p>
@@ -27,4 +16,4 @@ document.querySelector<HTMLDivElement>("#app")!.innerHTML = `
   </div>
 `;
 
-setupCounter(document.querySelector<HTMLButtonElement>("#counter")!);
+document.querySelector<HTMLButtonElement>("#counter")!;
